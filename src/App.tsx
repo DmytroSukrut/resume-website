@@ -1,11 +1,13 @@
 import './App.css'
+import MainPage from './pages/main_page.tsx'
+
 
 function App() {
 
 
   return (
     <>
-      <h1>Hello World</h1>
+      <MainPage />
     </>
   )
 }

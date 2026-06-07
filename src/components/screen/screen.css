@@ -1,0 +1,21 @@
+.screen-scanlines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.screen-scanlines {
+    z-index: 5;
+    background:
+            linear-gradient(
+                    rgba(18, 16, 16, 0) 50%,
+                    rgba(0, 0, 0, 0.1) 50%
+            ),
+            linear-gradient(
+                    90deg,
+                    rgba(255, 0, 0, 0.01),
+                    rgba(0, 255, 0, 0.01),
+                    rgba(0, 0, 255, 0.01)
+            );
+    background-size: 100% 3px, 4px 100%;
+}
