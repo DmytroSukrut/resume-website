@@ -1,6 +1,8 @@
-import { Box } from "@mui/material";
+import {Box, Grid} from "@mui/material";
 import bliss from "../../assets/images/bliss.jpg";
-import {TaskBar} from "../task_bar/task_bar.tsx";
+import resume_icon from "../../assets/images/resume_icon.png";
+import { TaskBar } from "../task_bar/task_bar.tsx";
+import { Application } from "../application.tsx";
 import "./screen.css";
 
 export const Screen = () => {
@@ -11,6 +13,8 @@ export const Screen = () => {
                 width: "100%",
                 height: "100%",
                 overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
 
                 backgroundImage: `url(${bliss})`,
                 backgroundSize: "cover",
@@ -24,13 +28,36 @@ export const Screen = () => {
             }}
         >
             <Box sx={{
-                width: "100%",
-                height: "100%",
+                flex: 1,
                 padding: "10px",
             }}>
-                <Box sx={{ position: "relative", zIndex: 1 }}>
-                    Hello from screen
-                </Box>
+                <Grid container sx={{
+
+                }}></Grid>
+                <Grid container spacing={2} sx={{
+                    width: "100%",
+                    height: "100%",
+                }}>
+                    <Grid size={{ xs: 6, md: 2, lg: 1}}>
+                        <Application app_name={"Resume.exe"} app_icon={`${resume_icon}`} onClick={() => console.log("button_click")} />
+                    </Grid>
+                    <Grid size={{ xs: 6, md: 10, lg: 11}} />
+                    <Grid size={{ xs: 6, md: 2, lg: 1}}>
+                        <Application app_name={"Resume.exe"} app_icon={`${resume_icon}`} onClick={() => console.log("button_click")} />
+                    </Grid>
+                    <Grid size={{ xs: 6, md: 10, lg: 11}} />
+                    <Grid size={{ xs: 6, md: 2, lg: 1}}>
+                        <Application app_name={"Resume.exe"} app_icon={`${resume_icon}`} onClick={() => console.log("button_click")} />
+                    </Grid>
+                    <Grid size={{ xs: 6, md: 10, lg: 11}} />
+                    <Grid size={{ xs: 6, md: 2, lg: 1}}>
+                        <Application app_name={"Resume.exe"} app_icon={`${resume_icon}`} onClick={() => console.log("button_click")} />
+                    </Grid>
+                    <Grid size={{ xs: 6, md: 10, lg: 11}} />
+                </Grid>
+
+
+
             </Box>
 
 

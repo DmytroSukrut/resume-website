@@ -7,8 +7,6 @@ export const TaskBar = () => {
 
     return (
         <Box sx={{
-            position: "absolute",
-            bottom: 0,
             display: "flex",
             justifyContent: "flex-start",
             width: "100%",
