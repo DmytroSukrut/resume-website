@@ -39,7 +39,7 @@ export const Application = ({app_name, app_icon, onClick}: ApplicationProps) => 
                 height: "80px",
                 objectFit: "contain",
             }}/>
-            <Typography sx={{fontSize: "14px"}}>
+            <Typography sx={{fontSize: "13px"}}>
                 {app_name}
             </Typography>
         </Button>
